@@ -9,10 +9,10 @@
 
     @foreach ($movies as $movie)
       <ul>
-        <li> <strong>Titolo Originale: </strong> {{ $movie['titolo originale'] }}  </li>
-        <li> <strong>Titolo:</strong> {{ $movie['titolo'] }}  </li>
-        <li> <strong>Genere:</strong> {{ $movie['genere'] }} </li>
-        <li> <strong>Trama:</strong> {{ $movie['descrizione']  }} </li>
+        <li> <strong>Titolo Originale: </strong> {{ $movie->title }}  </li>
+        <li> <strong>Titolo:</strong> {{ $movie->titolo }}  </li>
+        <li> <strong>Genere:</strong> {{ $movie->genere }} </li>
+        <li> <strong>Trama:</strong> {{ $movie->descrizione  }} </li>
       </ul>
 
     @endforeach
